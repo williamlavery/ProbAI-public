@@ -1,10 +1,10 @@
-# ProbAI-personal
+# ProbAI-public
 
 ---------------
 ## Directory structure
 
 ```
-ProbAI-personal
+ProbAI-public
 ├── JN
 │   ├── 🟩 c1.ipynb
 │   ├── 🟩 c2.ipynb
@@ -99,7 +99,7 @@ ProbAI-personal
 
 0) start at your project root (same folder as pyproject.toml)
 ```
-cd path/to/ProbAI-personal
+cd path/to/ProbAI-public
 ```
 
 1) (one-time) ensure package is a regular package (not namespace)
@@ -162,7 +162,7 @@ Note: If one runs skips 2) and simply runs the the ipynb notebooks in 3) the plo
 --------------------
 
 ## Report
-The report pertaining to DT8122 Project Assignment can be found at `WL_submission.pdf`. This is in relation to the DT8122 Project Assignment ('dt8122_Project_Assignment_2025`).
+The report pertaining to DT8122 Project Assignment can be found at `WL_report.pdf`. This is in relation to the DT8122 Project Assignment ('dt8122_Project_Assignment_2025`).
 
 An overview of the results are displayed below in the form of gifs.
 
