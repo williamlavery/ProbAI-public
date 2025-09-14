@@ -167,7 +167,7 @@ Notes:
   If any parameters in the `config/` directory are modified, a new model with the updated architecture will be trained (and
   intermediate models will be saved).
   
-(4) Execute c1.ipynb/c2.ipynb/c3.ipynb for generating (and saving plots) corresponding to c1/c2/c3.
+(4) Execute `c1.ipynb`/`c2.ipynb`/`c3.ipynb` for generating (and saving plots) corresponding to c1/c2/c3.
 
 Note: If one runs skips (4) and simply runs the the ipynb notebooks in (3) the plots shown in the report will be formed.
 (I.e., minimal steps to see the results are (0) - (2) inclusive and then (4)).
