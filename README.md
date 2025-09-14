@@ -158,7 +158,7 @@ python generate_data.py
 Notes:
 - The data objects storing the training, validation and test data will automatically be created when executing `python
   simulate.py` in the `code/` directory. Unfortunately, these objects are to large to have stored on the remote directoy.
-  Therefore, if step (3) will be completed then step (2) is redunant.  
+  Therefore, if step (3) will be completed then step (2) is redundant.  
 
 - Pre-trained models are already available. The code will automatically load the model specified in the configuration files  
   (`config_dynamic.py` and `config_static.py`) with the highest number of trained epochs. The number of epochs corresponds to
