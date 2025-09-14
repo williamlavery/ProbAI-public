@@ -98,9 +98,9 @@ ProbAI-public
 
 ### Set-up
 
-0) start at your project root (same folder as pyproject.toml)
+0) start at your project root code file (same folder as pyproject.toml)
 ```
-cd path/to/ProbAI-public
+cd path/to/ProbAI-public/code
 ```
 
 1) (one-time) ensure package is a regular package (not namespace)
