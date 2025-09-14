@@ -1,10 +1,10 @@
-# ProbAI-personal
+# ProbAI-public
 
 ---------------
 ## Directory structure
 
 ```
-ProbAI-personal
+ProbAI-public
 ├── JN
 │   ├── 🟩 c1.ipynb
 │   ├── 🟩 c2.ipynb
@@ -76,6 +76,7 @@ ProbAI-personal
 
     ├── 🟥 pyproject.toml
     ├── 🟥 environment.yml
+    ├── 🟧 generate_data.py 
     └── 🟧 simulate.py 
 ```
 
@@ -99,7 +100,7 @@ ProbAI-personal
 
 0) start at your project root (same folder as pyproject.toml)
 ```
-cd path/to/ProbAI-personal
+cd path/to/ProbAI-public
 ```
 
 1) (one-time) ensure package is a regular package (not namespace)
@@ -132,21 +133,32 @@ PY
 ### Results generation
 - After **Set-up** one can generate the models by:
  
-0) start at your project root (same folder as pyproject.toml)
-cd path/to/ProbAI-personal
+(0) start at your project root (same folder as pyproject.toml)
+```
+cd path/to/ProbAI-public/code/
+```
 
-1) Activate conda environment
+(1) Activate conda environment
+```
 conda activate probAI
+```
 
-2) Train a particular model configuration (c1, c2 or c3). For example, fot c1:
+(2) Generate training,validation and test data:
+   execute
+```
+python generate_data.py
+```
 
-   1) set "CASE = 1" in    `ProbAI-personal/code/config/config_dynamic.py`
-   2) execute              `ProbAI-personal/code/simulate.py`
-      python simulate.py
+(3) Train a particular model configuration (c1, c2 or c3). For example, fot c1:
+
+   1) set "CASE = 1" in    `ProbAI-public/code/config/config_dynamic.py`
+   2) execute simulation
+      ```python simulate.py```
 
 Notes:
 - The data objects storing the training, validation and test data will automatically be created when executing `python
   simulate.py` in the `code/` directory. Unfortunately, these objects are to large to have stored on the remote directoy.
+  Therefore, if step (3) will be completed then step (2) is redudant.  
 
 - Pre-trained models are already available. The code will automatically load the model specified in the configuration files  
   (`config_dynamic.py` and `config_static.py`) with the highest number of trained epochs. The number of epochs corresponds to
@@ -154,15 +166,16 @@ Notes:
   model by exactly the `early_stopping` number of epochs (without saving intermidate models and no improvements will occur).
   If any parameters in the `config/` directory are modified, a new model with the updated architecture will be trained.
   
-3) Execute c1.ipynb/c2.ipynb/c3.ipynb for generating (and saving plots) corresponding to c1/c2/c3.
+(4) Execute c1.ipynb/c2.ipynb/c3.ipynb for generating (and saving plots) corresponding to c1/c2/c3.
 
-Note: If one runs skips 2) and simply runs the the ipynb notebooks in 3) the plots shown in the report will be formed.
+Note: If one runs skips 4) and simply runs the the ipynb notebooks in 3) the plots shown in the report will be formed.
+(I.e., minimal steps to see results are (0) - (2) inclusive and then (4)).
    
    
 --------------------
 
 ## Report
-The report pertaining to DT8122 Project Assignment can be found at `WL_submission.pdf`. This is in relation to the DT8122 Project Assignment ('dt8122_Project_Assignment_2025`).
+The report pertaining to DT8122 Project Assignment can be found at `WL_report.pdf`. This is in relation to the DT8122 Project Assignment ('dt8122_Project_Assignment_2025`).
 
 An overview of the results are displayed below in the form of gifs.
 
