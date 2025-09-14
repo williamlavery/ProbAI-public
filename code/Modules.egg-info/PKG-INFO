@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: Modules
+Version: 0.1.0
+Summary: Probabilistic AI models and utilities.
+Author-email: Your Name <you@example.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=2.2
+Requires-Dist: torchvision>=0.17
+Requires-Dist: matplotlib<3.8,>=3.7
+Requires-Dist: numpy>=1.26
+Provides-Extra: dev
+Requires-Dist: pytest>=7; extra == "dev"
+Requires-Dist: ruff>=0.5; extra == "dev"
+Requires-Dist: mypy>=1.10; extra == "dev"
+
+# ProbAI-personal
