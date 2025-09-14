@@ -16,5 +16,3 @@ Provides-Extra: dev
 Requires-Dist: pytest>=7; extra == "dev"
 Requires-Dist: ruff>=0.5; extra == "dev"
 Requires-Dist: mypy>=1.10; extra == "dev"
-
-# ProbAI-personal
