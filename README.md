@@ -133,15 +133,15 @@ PY
 - After **Set-up** one can generate the models by:
  
 0) start at your project root (same folder as pyproject.toml)
-cd path/to/ProbAI-personal
+cd path/to/ProbAI-public/code/
 
 1) Activate conda environment
 conda activate probAI
 
 2) Train a particular model configuration (c1, c2 or c3). For example, fot c1:
 
-   1) set "CASE = 1" in    `ProbAI-personal/code/config/config_dynamic.py`
-   2) execute              `ProbAI-personal/code/simulate.py`
+   1) set "CASE = 1" in    `ProbAI-public/code/config/config_dynamic.py`
+   2) execute              `ProbAI-public/code/simulate.py`
       python simulate.py
 
 Notes:
