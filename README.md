@@ -166,6 +166,8 @@ Notes:
   model by exactly the `early_stopping` number of epochs (without saving intermidate models and no improvements will occur).
   If any parameters in the `config/` directory are modified, a new model with the updated architecture will be trained (and
   intermediate models will be saved).
+- If the runtime is an issue with the models then reduce `ES` in the `config_dynamic` file. Only a couple of epochs are needed
+  for the majority of the training benefit to be observed.
   
 (4) Execute `c1.ipynb`/`c2.ipynb`/`c3.ipynb` for generating (and saving plots) corresponding to c1/c2/c3.
 
