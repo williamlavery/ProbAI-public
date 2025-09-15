@@ -5,7 +5,7 @@ Experiment configuration parameters.
 
 Version: 1.0.0
 Date: 2025-08-26
-Author: Your Name <you@example.com>
+Author: W. Lavery
 Python: >=3.9
 
 ------------------------------------------------------------------------------
